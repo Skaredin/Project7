@@ -89,7 +89,7 @@ public class Main {
     }
 
     public static class GradientText extends JPanel {
-        private static final int PREF_W = 600;
+        private static final int PREF_W = 1600;
         private static final int PREF_H = 200;
         private static final Font FONT = new Font(Font.DIALOG, Font.BOLD, 46);
         private static final String TEXT = str1 ;
