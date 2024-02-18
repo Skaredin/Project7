@@ -16,20 +16,21 @@ public class Main {
 
 
     private static class SuperClasT1 {
-        private static int str;
+        private static int str=-3;
         private static String str1;
         private static String str2;
         private static String str3;
 
         SuperClasT1(String str11) {
             str1 = str11;
-            str = str + 1;
+
         }
 
         @Override
         public String   toString() {
             String sCAFV;
-            sCAFV = ANSI_BLUE+"SUB наименование класса: " +ANSI_RED+ this.getClass().getSimpleName() + ANSI_BLUE+" 1S !" + str1;
+            str = str + 1;
+            sCAFV = ANSI_BLUE+"SUB наименование класса: №" +str+": " +ANSI_RED+ this.getClass().getSimpleName() + ANSI_BLUE+" 1S !" + str1;
             return sCAFV;
         }
 
@@ -51,7 +52,8 @@ public class Main {
             public String toString() {
 
                 String sCAFV2;
-                sCAFV2 = ANSI_BLUE+"SUP наименование класса: " + ANSI_RED+this.getClass().getSimpleName() + ANSI_BLUE+" 2S !" + str2;
+                str = str + 1;
+                sCAFV2 = ANSI_BLUE+"SUP наименование класса: №" +str+": " + ANSI_RED+this.getClass().getSimpleName() + ANSI_BLUE+" 2S !" + str2;
                 return sCAFV2;
 
             }
@@ -71,7 +73,8 @@ public class Main {
             public String toString() {
 
                 String sCAFV3;
-                sCAFV3 = ANSI_BLUE+"SUP наименование класса: " + ANSI_RED+this.getClass().getSimpleName() + ANSI_BLUE+" 3S !" + str3;
+                str = str + 1;
+                sCAFV3 = ANSI_BLUE+"SUP2 наименование класса №"+str+": " + ANSI_RED+this.getClass().getSimpleName() + ANSI_BLUE+" 3S !" + str3;
                 return sCAFV3;
 
 
